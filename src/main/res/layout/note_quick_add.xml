@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/editTextQuickAddTitle"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:textStyle="bold"
+		android:enabled="true"
+		android:editable="true"
+		android:layout_toLeftOf="@+id/buttonQuickAddNote"
+		android:hint="Title"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/editTextQuickAddContent"
+		android:layout_below="@+id/editTextQuickAddTitle"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_toLeftOf="@+id/buttonQuickAddNote"
+		android:editable="true"
+		android:enabled="true"
+		android:hint="Content"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="+"
+		android:id="@+id/buttonQuickAddNote"
+		android:clickable="true"
+		android:enabled="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentTop="true"
+		android:textStyle="bold"
+		android:layout_alignBottom="@+id/editTextQuickAddTags"/>
+
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/editTextQuickAddTags"
+		android:layout_below="@+id/editTextQuickAddContent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:enabled="true"
+		android:editable="true"
+		android:hint="Tags"
+		android:layout_toLeftOf="@+id/buttonQuickAddNote"/>
+
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="20px"
+		android:id="@+id/space"
+		android:layout_below="@+id/buttonQuickAddNote"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

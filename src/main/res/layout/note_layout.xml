@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0f0f0f">
+
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textMultiLine"
+		android:ems="10"
+		android:id="@+id/editTextTitle"
+		android:editable="true"
+		android:enabled="true"
+		android:textStyle="bold"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:hint="Title"/>
+
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textMultiLine"
+		android:ems="10"
+		android:id="@+id/editTextContent"
+		android:layout_alignParentStart="true"
+		android:editable="true"
+		android:enabled="true"
+		android:layout_below="@+id/editTextTitle"
+		android:layout_alignParentLeft="true"
+		android:hint="Content"/>
+
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/editTextTags"
+		android:layout_below="@+id/editTextContent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:editable="true"
+		android:enabled="true"
+		android:hint="Tags"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Button A"
+		android:id="@+id/buttonA"
+		android:layout_below="@+id/editTextTags"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Button B"
+		android:id="@+id/buttonB"
+		android:layout_below="@+id/editTextTags"
+		android:layout_toRightOf="@+id/buttonA"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Button C"
+		android:id="@+id/buttonC"
+		android:layout_alignTop="@+id/buttonB"
+		android:layout_toRightOf="@+id/buttonB"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="NoteID:"
+		android:id="@+id/textViewNoteIDLabel"
+		android:layout_alignBottom="@+id/buttonC"
+		android:layout_toRightOf="@+id/buttonC"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:id="@+id/textViewNoteIDNumber"
+		android:layout_toRightOf="@+id/textViewNoteIDLabel"
+		android:layout_alignBottom="@+id/textViewNoteIDLabel"
+		android:layout_marginLeft="5dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:id="@+id/textViewTimestamp"
+		android:layout_below="@+id/buttonA"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
